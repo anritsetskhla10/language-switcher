@@ -12,37 +12,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="./images/translate.svg" alt="logo"></a>
-            </div> 
-            <div class="lang-menu">
-                <div class="selected-lang">
-                    English
-                </div>
-                <ul>
-                    <li>
-                        <a href="#" class="en" onclick="changeLanguage('en')">English</a>
-                    </li>
-                    <li>
-                        <a href="" class="fr" onclick="changeLanguage('fr')">Français</a>
-                    </li>
-                    <li>
-                        <a href="" class="es" onclick="changeLanguage('es')">Español</a>
-                    </li>
-                    <li>
-                        <a href="" class="ge" onclick="changeLanguage('ge')">ქართული</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./images/translate.svg" alt="logo">
+      </div>
+      <div class="lang-menu">
+        <div class="selected-lang" id="selected-lang">
+            <img src="./images/uk.svg" alt="" id="selected-flag">
+            <span id="selected-lang-text">English</span>
+        </div>
+        <ul id="language-options">
+          <li>
+            <img src="./images/uk.svg" alt="">
+            <a href="#" class="lang-link" data-lang="en" data-flag="./images/uk.svg" data-lang-text="English">English</a>
+          </li>
+          <li>
+            <img src="./images/france.svg" alt="">
+            <a href="#" class="lang-link" data-lang="fr" data-flag="./images/france.svg" data-lang-text="Français">Français</a>
+          </li>
+          <li>
+            <img src="./images/es.svg" alt="">
+            <a href="#" class="lang-link" data-lang="es" data-flag="./images/es.svg" data-lang-text="Español">Español</a>
+          </li>
+          <li>
+            <img src="./images/georgia.svg" alt="">
+            <a href="#" class="lang-link" data-lang="ge" data-flag="./images/georgia.svg" data-lang-text="ქართული">ქართული</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <h1 id="welcome"></h1>
   <p id="description"></p>
-
 </body>
 </html>
